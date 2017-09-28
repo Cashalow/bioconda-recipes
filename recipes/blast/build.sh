@@ -27,7 +27,7 @@ cd $SRC_DIR/c++/
     --without-openssl \
     --with-gnutls=$PREFIX \
     --without-krb5 \
-    --wit-nettle=$PREFIX
+    --with-nettle=$PREFIX
 
 projects="algo/blast/ app/ objmgr/ objtools/align_format/ objtools/blast/"
 
