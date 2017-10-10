@@ -41,15 +41,8 @@ fi
     --without-krb5\
     --prefix=$PREFIX
 
-projects="algo/blast/ app/ objmgr/ objtools/align_format/ objtools/blast/"
+make -j${CPU_COUNT} 
 
-cd */build
+make install 
 
-make -j${CPU_COUNT} -f Makefile.flat all_projects="$projects"
 
-mkdir -p $PREFIX/{bin,lib,include}
-rm $SRC_DIR/c++/ReleaseMT/bin/*_unit_test
-cp $SRC_DIR/c++/ReleaseMT/bin/* $PREFIX/bin/
-cp $SRC_DIR/c++/ReleaseMT/lib/* $PREFIX/lib/
-
-chmod +x $PREFIX/bin/*
