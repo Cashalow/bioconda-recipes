@@ -38,7 +38,8 @@ fi
     --without-gcrypt \
     --with-gnutls=$PREFIX \
     --with-nettle=$PREFIX \
-    --without-krb5
+    --without-krb5\
+    --prefix=$PREFIX
 
 projects="algo/blast/ app/ objmgr/ objtools/align_format/ objtools/blast/"
 
