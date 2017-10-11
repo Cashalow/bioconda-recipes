@@ -27,7 +27,6 @@ fi
     --without-caution \
     --without-dbapi \
     --without-lzo \
-    --with-hard-runpath \
     --without-debug \
     --with-strip \
     --without-vdb \
